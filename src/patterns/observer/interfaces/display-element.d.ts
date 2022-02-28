@@ -1,3 +1,3 @@
 interface DisplayElement {
-    display(): void;
+	display(): void
 }

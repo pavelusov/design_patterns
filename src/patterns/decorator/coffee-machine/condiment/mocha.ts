@@ -1,21 +1,20 @@
-import { Beverage } from "../beverage/beverage";
-import { CondimentDecorator } from "./condiment-decorator";
+import { Beverage } from '../beverage/beverage'
+import { CondimentDecorator } from './condiment-decorator'
 
 export class Mocha extends CondimentDecorator {
-    private beverage: Beverage;
+	private beverage: Beverage
 
-    constructor(beverage: Beverage) {
-        super();
-        this.beverage = beverage;
-    }
+	constructor(beverage: Beverage) {
+		super()
+		this.beverage = beverage
+	}
 
-    getDescription(): string {
-        const description = this.beverage.getDescription();
-        return `${description}, Mocha`
-    }
+	getDescription(): string {
+		const description = this.beverage.getDescription()
+		return `${description}, Mocha`
+	}
 
-    cost(): number {
-        return 30 + this.beverage.cost();
-    }
-
+	cost(): number {
+		return 30 + this.beverage.cost()
+	}
 }

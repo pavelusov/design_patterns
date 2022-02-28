@@ -1,13 +1,12 @@
-import {Beverage} from "./beverage";
+import { Beverage } from './beverage';
 
 export class Espresso extends Beverage {
-    constructor() {
-        super();
-        this.description = "Espresso";
-    }
+	constructor() {
+		super();
+		this.description = 'Espresso';
+	}
 
-    cost(): number {
-        return 150;
-    }
-
+	cost(): number {
+		return 150;
+	}
 }

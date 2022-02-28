@@ -1,5 +1,5 @@
-import {Beverage} from "../beverage/beverage";
+import { Beverage } from '../beverage/beverage'
 
 export abstract class CondimentDecorator extends Beverage {
-    abstract getDescription(): string;
+	abstract getDescription(): string
 }

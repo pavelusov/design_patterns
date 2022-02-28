@@ -10,7 +10,6 @@
   },
   "scripts": {
     "start": "ts-node src/index.ts",
-    "start:pattern": "ts-node src/patterns/index.ts",
     "tsc": "tsc"
   },
   "devDependencies": {
