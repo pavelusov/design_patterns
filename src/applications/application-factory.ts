@@ -3,6 +3,7 @@ import { CoffeeMachineApp } from './coffee-machine-app';
 import { EmployeeApp } from './employee-app';
 import { HelloWorldApp } from './hello-world-app';
 import { PizzaApp } from './pizza-app';
+import { RemoteControlApp } from './remote-control-app';
 import { WeatherStation } from './weather-station-app';
 
 export class ApplicationFactory {
@@ -25,10 +26,14 @@ export class ApplicationFactory {
 				application = new PizzaApp(otherArgs);
 				break;
 
-			// case 'station':
-			// case 'weather':
-			// 	application = new WeatherStation();
-			// 	break;
+			case 'remote':
+				application = new RemoteControlApp(otherArgs);
+				break;
+
+			case 'station':
+			case 'weather':
+				application = new WeatherStation();
+				break;
 
 			default:
 				application = new HelloWorldApp(otherArgs);
